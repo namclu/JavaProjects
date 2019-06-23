@@ -16,7 +16,7 @@ class Email {
     private String email;
     private String password;
     private int defaultLength = 11;
-    private int mailboxCapacity;
+    private int mailboxCapacity = 100;
     private String alternateEmail;
 
     // Constructor to receive first and last name
@@ -69,8 +69,17 @@ class Email {
     }
 
     // Change password
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     // Set mailbox capacity
+    public void setMailboxCapacity (int mailboxCapacity) {
+        this.mailboxCapacity = mailboxCapacity;
+    }
 
     // Set alternate email
+    public void setAlternateEmail(String alternateEmail) {
+        this.alternateEmail = alternateEmail;
+    }
 }

@@ -68,18 +68,32 @@ class Email {
         return new String(password);
     }
 
+    /* Setters */
     // Change password
-    public void setPassword(String password) {
+    void setPassword(String password) {
         this.password = password;
     }
 
     // Set mailbox capacity
-    public void setMailboxCapacity (int mailboxCapacity) {
+    void setMailboxCapacity(int mailboxCapacity) {
         this.mailboxCapacity = mailboxCapacity;
     }
 
     // Set alternate email
-    public void setAlternateEmail(String alternateEmail) {
+    void setAlternateEmail(String alternateEmail) {
         this.alternateEmail = alternateEmail;
+    }
+
+    /* Getters */
+    String getPassword() {
+        return password;
+    }
+
+    int getMailboxCapacity() {
+        return mailboxCapacity;
+    }
+
+    String getAlternateEmail() {
+        return alternateEmail;
     }
 }

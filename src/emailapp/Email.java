@@ -13,6 +13,7 @@ class Email {
     private String firstName;
     private String lastName;
     private String department;
+    private String email;
     private String password;
     private int defaultLength = 11;
     private int mailboxCapacity;
@@ -31,6 +32,10 @@ class Email {
         // Call method that returns random password
         this.password = randomPassword(defaultLength);
         System.out.println("Password = " + this.password);
+
+        // Generate an email: firstname.lastname@department.company.com
+        this.email = this.firstName.toLowerCase() + "." + this.lastName.toLowerCase() + "@" + department.toLowerCase() + ".company.com";
+        System.out.println("Email = " + email);
     }
 
     // Ask for department
